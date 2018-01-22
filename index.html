@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/app.min.css">
+</head>
+<body>
+<script>
+    window.addEventListener("resize",rem);
+    window.addEventListener("orientationchange",rem);
+    function rem(){
+        var html=document.querySelector("html");
+        var width=html.getBoundingClientRect().width;
+        html.style.fontSize=width/16+"px"
+    }
+    rem()
+</script>
+<div ui-view></div>
+<script src="./js/lib-bundle.min.js"></script>
+<script src="./js/app.min.js"></script>
+</body>
+</html>

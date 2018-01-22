@@ -1,0 +1,188 @@
+html, body, div, form, input {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+input {
+  outline: none; }
+
+@media screen and (max-width: 750px) {
+  #header {
+    background: url(./../../imgs/img@2x/personCenter/bg_login.png) no-repeat; } }
+a {
+  outline: none;
+  text-decoration: none; }
+
+@media only screen and (min-width: 750px) {
+  #header {
+    background: url(./../../imgs/img@3x/personCenter/bg_login.png) no-repeat; } }
+::-webkit-input-placeholder {
+  color: #A9A9A9; }
+
+#box #header {
+  width: 100%;
+  height: 12.288rem;
+  background-size: 100%; }
+#box #section form {
+  width: 80%;
+  margin: 0 auto; }
+  #box #section form .form_div {
+    height: 1.4933333333rem;
+    width: 100%;
+    position: relative; }
+    #box #section form .form_div .Text {
+      height: 1.4933333333rem;
+      width: 100%;
+      border: none;
+      border-bottom: 1.5px solid #ddd;
+      font-size: 0.512rem;
+      font-weight: lighter;
+      line-height: 1.28rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box; }
+    #box #section form .form_div #myYanzheng {
+      width: 3.2rem;
+      line-height: 0.8533333333rem;
+      float: right;
+      text-align: center;
+      font-size: 0.384rem;
+      border: 1px solid;
+      position: absolute;
+      right: 0.2133333333rem;
+      bottom: 0; }
+  #box #section form .form_div:nth-last-of-type(1) #Yan {
+    width: 1.4933333333rem;
+    height: 1.4933333333rem;
+    position: absolute;
+    right: 0.2133333333rem;
+    bottom: -0.4266666667rem; }
+    #box #section form .form_div:nth-last-of-type(1) #Yan img {
+      width: 100%;
+      height: 100%; }
+  #box #section form .form_div:nth-last-of-type(2) #pg, #box #section form .form_div:nth-last-of-type(3) #pg {
+    width: 3.2rem;
+    height: 0.8533333333rem;
+    float: right;
+    position: absolute;
+    right: -0.8533333333rem;
+    bottom: 0.128rem; }
+    #box #section form .form_div:nth-last-of-type(2) #pg img, #box #section form .form_div:nth-last-of-type(3) #pg img {
+      width: 2.1333333333rem;
+      height: 0.8533333333rem; }
+  #box #section form .form_p {
+    font-size: 0.4693333333rem;
+    color: #798BA1;
+    margin-top: 1.0666666667rem;
+    text-align: center; }
+    #box #section form .form_p a {
+      color: #F66D44; }
+  #box #section form .form_pp {
+    font-size: 0.4266666667rem;
+    text-align: center;
+    color: red; }
+  #box #section form .form_but {
+    background: -webkit-linear-gradient(#FF6869, #FE786A, #FE786A, #FE976E);
+    width: 70%;
+    line-height: 1.7066666667rem;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 0.576rem;
+    margin: 0.768rem 2.0053333333rem 0 2.0053333333rem;
+    border: none;
+    -webkit-border-radius: 0.2133333333rem;
+    -moz-border-radius: 0.2133333333rem;
+    border-radius: 0.7466666667rem; }
+  #box #section form .form_p2 {
+    text-align: center;
+    margin-top: 0.2133333333rem; }
+    #box #section form .form_p2 a {
+      font-size: 0.512rem;
+      color: #F66D44; }
+
+.form_pA {
+  font-size: 0.512rem;
+  text-align: right;
+  margin-top: 0.8533333333rem; }
+  .form_pA a {
+    color: #F88765; }
+
+.form_div_b {
+  margin-top: 0.4266666667rem; }
+
+.box {
+  position: absolute;
+  bottom: -0.1066666667rem;
+  height: 1px;
+  width: 100%; }
+
+@keyframes myfirst {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-110%); } }
+@keyframes myfirst_two {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(110%); } }
+@keyframes myfirst_one {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes myfirst_one2 {
+  from {
+    width: 100%; }
+  to {
+    width: 0%; } }
+.anmiT_zz {
+  width: 400px; }
+
+.anmiT_a {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background: orange;
+  animation: myfirst_one 2s linear; }
+
+.anmiT_a_2 {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background: orange;
+  animation: myfirst_one2 2s linear 0.5s; }
+
+.anmiT_b {
+  width: 15%;
+  height: 0.832rem;
+  background: orange;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0.704rem;
+  right: -1.3866666667rem; }
+
+.anmiT_c {
+  width: 15%;
+  height: 0.8533333333rem;
+  background: white;
+  position: absolute;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(90deg);
+  top: 0.7253333333rem;
+  right: -1.28rem; }
+
+.anmiT_d {
+  width: 1.4933333333rem;
+  height: 2.24rem;
+  background: white;
+  position: absolute;
+  right: -1.4506666667rem;
+  top: 0; }
+
+.anmiT_d_2 {
+  animation: myfirst 0.3s linear; }
+
+.anmiT_d_3 {
+  animation: myfirst_two 0.3s linear; }

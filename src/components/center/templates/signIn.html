@@ -1,0 +1,42 @@
+<div ng-controller="SignIn">
+    <div id="box">
+        <div id="header">
+            <!--<img src="../imgs/img@2x/personCenter/bg_login.png" style="width: 100%"/>-->
+        </div>
+        <!--input-->
+        <div id="section">
+            <form action="">
+                <!--自定义指令-->
+                <div class="form_div" demo>
+                    <input type="search" placeholder="手机号" class="Text" ng-model="name" ng-change="Phone()" maxlength="11"/>
+                    <div class="box">
+                        <div class="anmiT_b"></div>
+                        <div class="anmiT_c"></div>
+                        <div class="anmiT_d"></div>
+                    </div>
+                    <div class="anmiT_zz"></div>
+                </div>
+
+                <div class="form_div form_div_b">
+                    <input type="text" ng-model="passWoed" placeholder="密码" class="Text"/>
+                    <div id="pg"></div>
+                    <div class="box"></div>
+                    <div class="anmiT_zz"></div>
+                </div>
+                <p class="form_pA">
+                    <a ui-sref="lookFor">忘记密码?</a>
+                </p>
+                <p class="form_pp">{{dete}}</p>
+                <!--遵守条令-->
+                <p class="form_p">点击"注册"按钮,即表示您同意<a href="#">《 面包云注册服务协议 》</a></p>
+                <!--注册按钮-->
+                <button class="form_but" ng-click="Deng()">登陆</button>
+                <!--已有账号-->
+                <p class="form_p2">
+                    <a ui-sref="demo">返回注册</a>
+                    <!--http://localhost:8089/#/signIn-->
+                </p>
+            </form>
+        </div>
+    </div>
+</div>

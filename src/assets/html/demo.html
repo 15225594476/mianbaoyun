@@ -1,0 +1,62 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="../css/app.css">
+    <script>
+        window.addEventListener("resize",rem);
+        window.addEventListener("orientationchange",rem);
+        function rem(){
+            var html=document.querySelector("html");
+            var width=html.getBoundingClientRect().width;
+            html.style.fontSize=width/16+"px"
+        }
+        rem()
+    </script>
+    <body>
+        <div id="box">
+            <div id="header">
+                <img src="../imgs/img@2x/personCenter/bg_login.png" />
+            </div>
+            <!--input-->
+            <div id="section">
+                <form action="">
+                    <div class="form_div">
+                        <input type="search" placeholder="手机号" class="Text" ng-model="name" ng-change="Phone()" maxlength="11"/>
+                        <div class="box"></div>
+                    </div>
+                    <div class="form_div">
+                        <input type="text" placeholder="图形码" class="Text"/>
+                        <div id="pg"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="form_div">
+                        <input type="text" placeholder="验证码" class="Text"/>
+                        <!--<div id="myYanzheng" ng-model="nameYanzheng" ng-click="myYanzheng()">{{nameYanzheng}}</div>-->
+                        <div class="box"></div>
+                    </div>
+                    <div class="form_div">
+                        <input type="text" placeholder="密码" class="Text"/>
+                        <div class="box"></div>
+                    </div>
+                    <!--<p class="form_pp">{{dete}}</p>-->
+                    <!--遵守条令-->
+                    <p class="form_p">点击"注册"按钮,即表示您同意<a href="#">《 面包云注册服务协议 》</a></p>
+                    <!--注册按钮-->
+                    <button class="form_but">注册</button>
+                    <!--已有账号-->
+                    <p class="form_p2">
+                        <a href="#">已有账号</a>
+                        <!--http://localhost:8089/#/signIn-->
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </body>
+    </html>

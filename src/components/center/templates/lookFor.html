@@ -1,0 +1,45 @@
+<div ng-controller="lookFor">
+        <div id="box">
+            <div id="header">
+                <!--<img src="./imgs/img@2x/personCenter/bg_login.png" />-->
+            </div>
+            <!--input-->
+            <div id="section">
+                <form action="">
+                    <!--自定义指令   手机号验证-->
+                    <div class="form_div" demo>
+                        <input type="search" placeholder="手机号" class="Text" ng-model="name" ng-change="Phone()" maxlength="11"/>
+                        <div class="box"></div>
+                    </div>
+                    <div class="form_div">
+                        <input type="text" placeholder="图形码" class="Text" ng-model="Yname"/>
+                        <div id="pg" ng-show="pdd">
+                            <img ng-src={{src}} id="oImg" ng-click="pGG()"/>
+                        </div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="form_div" my-code>
+                        <input type="text" ng-model="SjY" placeholder="验证码" class="Text"/>
+                        <button id="myYanzheng" ng-model="nameYanzheng" ng-click="myYanzheng()" ng-disabled="all">{{nameYanzheng}}</button>
+                        <div class="box"></div>
+                    </div>
+                    <!--自定义指令 -->
+                    <div class="form_div" my-eny>
+                        <input type="password" ng-model="passWoed" placeholder="新密码" class="Text"/>
+                        <div id="Yan" ng-mousemove="YanDown()" ng-mouseout="YanUp()">
+                        <img src="imgs/img@2x/personCenter/icon_eyes_close.png" ng-show="Yanhide" alt="">
+                        <img src="imgs/img@2x/personCenter/icon_eyes_open.png" ng-hide="Yanhide" alt="">
+                        </div>
+                        <div class="box"></div>
+                    </div>
+                    <p class="form_pp">{{dete}}</p>
+                    <!--找回密码按钮-->
+                    <a class="form_but" ng-click="Zh()">找回密码</a>
+                    <!--已有账号-->
+                    <p class="form_p2">
+                        <a ui-sref="signIn">不找了,去登陆</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>

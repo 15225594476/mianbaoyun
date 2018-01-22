@@ -1,0 +1,108 @@
+@charset "utf-8";
+@function rem($num){
+  @return $num / 46.875 + rem
+}
+//忘记密码
+.form_pA{
+    font-size: rem(24);
+    text-align: right;
+    margin-top: rem(40);
+  a{
+    color: #F88765;
+  }
+}
+.form_div_b{
+  margin-top: rem(20);
+}
+.box{
+  position: absolute;
+  bottom: rem(-5);
+  height: 1px;
+  width: 100%;
+}
+@keyframes myfirst{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-110%);
+
+  }
+}
+@keyframes myfirst_two{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(110%);
+  }
+}
+@keyframes myfirst_one{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+
+  }
+}
+@keyframes myfirst_one2{
+  from{
+    width: 100%;
+  }
+  to{
+    width: 0%;
+
+  }
+}
+.anmiT_zz{
+  width: 400px;
+}
+.anmiT_a{
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background: orange;
+  animation: myfirst_one 2s linear;
+}
+.anmiT_a_2{
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background: orange;
+  animation: myfirst_one2 2s linear 0.5s;
+}
+.anmiT_b{
+  width: 15%;
+  height: rem(39);
+  background: orange;
+  border-radius:50px 50px 0 0;
+  transform: rotate(90deg);
+  position: absolute;
+  top: rem(33);
+  right: rem(-65);
+}
+.anmiT_c{
+  width: 15%;
+  height: rem(40);
+  background: white;
+  position: absolute;
+  border-radius:50px 50px 0 0;
+  transform: rotate(90deg);
+  top: rem(34);
+  right:rem(-60);
+}
+.anmiT_d{
+  width: rem(70);
+  height: rem(105);
+  background: white;
+  position: absolute;
+  right: rem(-68);
+  top: 0;
+}
+.anmiT_d_2{
+  animation: myfirst 0.3s linear;
+}
+.anmiT_d_3{
+  animation: myfirst_two 0.3s linear;
+}

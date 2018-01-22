@@ -1,0 +1,151 @@
+@charset "utf-8";
+@function rem($num){
+  @return $num / 46.875 + rem
+}
+//媒体查询
+//最大750，页面小于750的时候执行
+@media screen and (max-width:750px) {
+  #header{
+    background: url(./../../imgs/img@2x/personCenter/bg_login.png)no-repeat;
+  }
+}
+a{
+  outline: none;
+  text-decoration: none;
+}
+@media only screen and (min-width:750px){
+  #header{
+    background: url(./../../imgs/img@3x/personCenter/bg_login.png)no-repeat;
+  }
+}
+//文本框placeholder字体颜色
+::-webkit-input-placeholder{
+  color: #A9A9A9;
+}
+//animation动画
+//从左到右
+
+//动画
+
+#box{
+  //头部大图
+  #header{
+    width: 100%;
+    height: rem(576);
+    background-size: 100%;
+  }
+
+//  中间
+  #section{
+  //  表单
+    form{
+      width: 80%;
+      margin: 0 auto;
+      .form_div{
+        height: rem(70);
+        width: 100%;
+        position: relative;
+        //input框
+        .Text{
+          height: rem(70);
+          width: 100%;
+          border: none;
+          border-bottom: 1.5px solid #ddd;
+          font-size: rem(24);
+          font-weight: lighter;
+          line-height: rem(60);
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          //box-sizing: border-box;
+        }
+        //动画框
+
+        //手机验证码
+        #myYanzheng{
+          //border: 1px solid;
+          width: rem(150);
+          line-height: rem(40);
+          float: right;
+          text-align: center;
+          font-size: rem(18);
+          border: 1px solid;
+          position: absolute;
+          right: rem(10);
+          bottom: 0;
+        }
+      }
+      .form_div:nth-last-of-type(1){
+
+        //眼睛
+        #Yan{
+          width: rem(70);
+          height: rem(70);
+          position: absolute;
+          right: rem(10);
+          bottom: rem(-20);
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      //图形验证码
+      .form_div:nth-last-of-type(2),.form_div:nth-last-of-type(3){
+        //图形验证码
+        #pg{
+          //border: 1px solid;
+          width: rem(150);
+          height: rem(40);
+          float: right;
+          position: absolute;
+          right: rem(-40);
+          bottom: rem(6);
+          img{
+            width: rem(100);
+            height: rem(40);
+          }
+        }
+      }
+      //遵守条令
+      .form_p{
+        font-size: rem(22);
+        color: #798BA1;
+        margin-top: rem(50);
+        text-align: center;
+        a{
+          color: #F66D44;
+        }
+      }
+    //  检验正则
+      .form_pp{
+        font-size:rem(20);
+        text-align: center;
+        color: red;
+      }
+    //  注册按钮
+      .form_but{
+        background: -webkit-linear-gradient(#FF6869,#FE786A,#FE786A,#FE976E);
+        width: 70%;
+        line-height: rem(80);
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: rem(27);
+        margin: rem(36) rem(94) 0 rem(94);
+        border: none;
+        -webkit-border-radius: rem(10);
+        -moz-border-radius: rem(10);
+        border-radius: rem(35);
+      }
+    // 已有账号
+      .form_p2{
+        text-align: center;
+        margin-top: rem(10);
+        a{
+          font-size: rem(24);
+          color: #F66D44;
+        }
+      }
+    }
+  }
+}
